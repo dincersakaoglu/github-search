@@ -1,0 +1,17 @@
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Project Name</th>
+          <th>Programming Language</th>
+
+        </tr>
+      </thead>
+      <tbody> 
+        <tr *ngFor="let repo of ReposList" class="success">
+          <td (click)="triggerEvent(repo.name)">{{repo.name}}</td>
+          <td>{{repo.language}}</td> 
+         
+        </tr>
+      </tbody>
+    </table>
